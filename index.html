@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evently</title>
+
+    <link href="/bootstrap.min.css" rel="stylesheet">
+    <script src="/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container-fluid ">
+
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+
+                <div class="logo-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+
+                <div class="logo-text">
+                    <h1>Evently</h1>
+                    <p>Discover, Experience, Connect.</p>
+                </div>
+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#explore_event">Explore Events</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+
+                <div class="d-flex align-items-center gap-4">
+
+                    <a href="#" class="booking-link">
+                        <i class="fa-regular fa-heart"></i>
+                        My Bookings
+                    </a>
+
+                    <a href="/signup.html" class="btn signin-btn text-decoration-none">
+                        <i class="fa-solid fa-right-to-bracket me-2"></i> Sign In
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="home">
+        <div class="row home">
+            <div class="col-lg-4 p-4">
+
+                <h1>Discover Events</h1>
+                <h2>You'll Love.</h2>
+                <p>Find concert, workshops, conferences, cultural events and more - all in one place.</p>
+                <div class="d-grid gap-2 d-md-block">
+                    <button class="btn signin-btn" type="button">Explore Events →</button>
+                    <button class="btn btn-outline secbut " type="button">Create Event </button>
+                </div>
+
+            </div>
+            <div class="col-lg-8">
+                <div class="main_image">
+                    <img src="/concert.png" alt="Concert">
+                </div>
+            </div>
+        </div>
+
+        <!-- explore events -->
+        <div class="container search_bar mr-3 mt-3" id="explore_event">
+            <div class="row m-2  ">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+
+                        <input type="text" class="form-control" placeholder="Search event, artist, or place...">
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <select class="form-select">
+                        <option>Select Location</option>
+                        <option>Pune</option>
+                        <option>Satara</option>
+                        <option>Goa</option>
+                    </select>
+                </div>
+
+
+                <div class="col">
+                    <select class="form-select">
+                        <option>All Categories</option>
+                        <option>Music</option>
+                        <option>Technology</option>
+                        <option>Workshops</option>
+                    </select>
+                </div>
+
+
+                <div class="col">
+                    <div class="date-box">
+                        <i class="fa-regular fa-calendar"></i>
+                        <input type="date" id="eventDate">
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <button class="btn signin-btn">
+                        Search Events
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- categories -->
+    <div class="container-fluid mt-3  explore   px-5 py-4" id="categories">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="fw-bold m-0 fs-5">Browse by Category</h4>
+            <a href="#" class="view-link">View All Categories→</a>
+        </div>
+
+
+
+        <div class="row g-3">
+
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="category-box shadow-sm p-3 bg-white rounded-4 h-100 d-flex align-items-center gap-3">
+                    <div class="icon-circle bg-purple-light text-purple">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1 text-nowrap fw-bold">Concerts</h6>
+                        <p class="text-secondary small mb-0">120+ Events</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="category-box shadow-sm p-3 bg-white rounded-4 h-100 d-flex align-items-center gap-3">
+                    <div class="icon-circle bg-blue-light text-blue">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1 text-nowrap fw-bold">Technology</h6>
+                        <p class="text-secondary small mb-0">95+ Events</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="category-box shadow-sm p-3 bg-white rounded-4 h-100 d-flex align-items-center gap-3">
+                    <div class="icon-circle bg-orange-light text-orange">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1 text-nowrap fw-bold">Culture</h6>
+                        <p class="text-secondary small mb-0">80+ Events</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="category-box shadow-sm p-3 bg-white rounded-4 h-100 d-flex align-items-center gap-3">
+                    <div class="icon-circle bg-green-light text-green">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1 text-nowrap fw-bold">Business</h6>
+                        <p class="text-secondary small mb-0">100+ Events</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="category-box shadow-sm p-3 bg-white rounded-4 h-100 d-flex align-items-center gap-3">
+                    <div class="icon-circle bg-pink-light text-pink">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1 text-nowrap fw-bold">Wellness</h6>
+                        <p class="text-secondary small mb-0">40+ Events</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="category-box shadow-sm p-3 bg-white rounded-4 h-100 d-flex align-items-center gap-3">
+                    <div class="icon-circle bg-lavender-light text-lavender">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1 text-nowrap fw-bold">Workshops</h6>
+                        <p class="text-secondary small mb-0">60+ Events</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Featured Events Section -->
+    <div class="container-fluid px-lg-5 py-4 explore">
+
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h4 class="fw-bold m-0 fs-5">Featured Events</h4>
+            <a href="#events" class="view-link">View All Events →</a>
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+
+
+            <div class="col">
+                <div class="card event-card h-100">
+                    <img src="/summar.jpg" class="card-img-top" alt="Summer Music Festival">
+                    <div class="card-body">
+                        <h5 class="card-title">Summer Music Festival</h5>
+                        <p class="event-info"><i class="fa-regular fa-calendar"></i> 15 Sep 2026</p>
+                        <p class="event-info mb-0"><i class="fa-solid fa-location-dot"></i> Pune</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card event-card h-100">
+                    <img src="/tech.jpg" class="card-img-top" alt="Tech Conference">
+                    <div class="card-body">
+                        <h5 class="card-title">Tech Conference 2026</h5>
+                        <p class="event-info"><i class="fa-regular fa-calendar"></i> 20 Sep 2026</p>
+                        <p class="event-info mb-0"><i class="fa-solid fa-location-dot"></i> Pune</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card event-card h-100">
+                    <img src="/artgallery.jpg" class="card-img-top" alt="Art Exhibition">
+                    <div class="card-body">
+                        <h5 class="card-title">Art &amp; Design Exhibition</h5>
+                        <p class="event-info"><i class="fa-regular fa-calendar"></i> 25 Sep 2026</p>
+                        <p class="event-info mb-0"><i class="fa-solid fa-location-dot"></i> Mumbai</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card event-card h-100">
+                    <img src="/food.jpg" class="card-img-top" alt="Food Carnival">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Carnival 2026</h5>
+                        <p class="event-info"><i class="fa-regular fa-calendar"></i> 28 Sep 2026</p>
+                        <p class="event-info mb-0"><i class="fa-solid fa-location-dot"></i> Pune</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card event-card h-100">
+                    <img src="/summar.jpg" class="card-img-top" alt="Live Music Night">
+                    <div class="card-body">
+                        <h5 class="card-title">Live Music Night</h5>
+                        <p class="event-info"><i class="fa-regular fa-calendar"></i> 02 Oct 2026</p>
+                        <p class="event-info mb-0"><i class="fa-solid fa-location-dot"></i> Goa</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card event-card h-100">
+                    <img src="/tech.jpg" class="card-img-top" alt="Developer Meetup">
+                    <div class="card-body">
+                        <h5 class="card-title">Developer Meetup</h5>
+                        <p class="event-info"><i class="fa-regular fa-calendar"></i> 05 Oct 2026</p>
+                        <p class="event-info mb-0"><i class="fa-solid fa-location-dot"></i> Pune</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card event-card h-100">
+                    <img src="/artgallery.jpg" class="card-img-top" alt="Creative Art Workshop">
+                    <div class="card-body">
+                        <h5 class="card-title">Creative Art Workshop</h5>
+                        <p class="event-info"><i class="fa-regular fa-calendar"></i> 10 Oct 2026</p>
+                        <p class="event-info mb-0"><i class="fa-solid fa-location-dot"></i> Mumbai</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card event-card h-100">
+                    <img src="/food.jpg" class="card-img-top" alt="Street Food Festival">
+                    <div class="card-body">
+                        <h5 class="card-title">Street Food Festival</h5>
+                        <p class="event-info"><i class="fa-regular fa-calendar"></i> 15 Oct 2026</p>
+                        <p class="event-info mb-0"><i class="fa-solid fa-location-dot"></i> Satara</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="aboutus" class="py-4"></div>
+
+
+
+
+    <!-- About Us Section -->
+    <section class="container py-5">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+                <h2 class="fw-bold" style="color: #46519b;">
+                    About Evently
+                </h2>
+                <p class="text-secondary mt-3">
+                    Evently helps you discover concerts, workshops,
+                    conferences, cultural events and exciting experiences
+                    in one place. Explore events, find your interests
+                    and make every moment memorable.
+                </p>
+                <a href="#explore_event" class="btn signin-btn">
+                    Explore Events
+                </a>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="p-4 rounded-4" style="background: #e8e1f9;">
+                    <h4 class="fw-bold" style="color: #46519b;">
+                        Discover. Experience. Connect.
+                    </h4>
+                    <p class="text-secondary mb-0">
+                        Your next memorable experience starts with Evently.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: rgb(70, 81, 155);">
+                    Contact Us
+                </h2>
+                <p class="text-secondary">
+                    Have questions about an event? We're here to help you.
+                    Get in touch with the Evently team.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-4">
+                    <div class="p-4 shadow-sm rounded-3 h-100">
+
+                        <h5 style="color: rgb(70, 81, 155);">
+                            <i class="fa-solid fa-location-dot me-2"></i>Address
+                        </h5>
+                        <p class="text-secondary">
+                            Pune, Maharashtra, India
+                        </p>
+
+                        <h5 style="color: rgb(70, 81, 155);">
+                            <i class="fa-solid fa-phone me-2"></i>Call Us
+                        </h5>
+                        <p class="text-secondary">
+                            +91 98765 43210
+                        </p>
+
+                        <h5 style="color: rgb(70, 81, 155);">
+                            <i class="fa-solid fa-envelope me-2"></i>Email Us
+                        </h5>
+                        <p class="text-secondary">
+                            support@evently.com
+                        </p>
+
+                        <div class="mt-4">
+                            <iframe
+                                src="https://maps.google.com/maps?q=Pune,Maharashtra&t=&z=12&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="200" style="border: 0;" class="rounded-3" allowfullscreen=""
+                                loading="lazy">
+                            </iframe>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-8">
+                    <div class="p-4 shadow-sm rounded-3 h-100">
+
+                        <form action="#" method="post">
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">
+                                        Your Name
+                                    </label>
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Enter your name" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">
+                                        Your Email
+                                    </label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Enter your email" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">
+                                        Subject
+                                    </label>
+                                    <input type="text" class="form-control" id="subject" name="subject"
+                                        placeholder="Enter subject" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="message" class="form-label">
+                                        Message
+                                    </label>
+                                    <textarea class="form-control" id="message" name="message" rows="6"
+                                        placeholder="Write your message here..." required></textarea>
+                                </div>
+
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn text-white rounded-pill px-4 py-2"
+                                        style="background-color: rgb(70, 81, 155);">
+                                        Send Message
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer style="background-color:  #e8e1f9;">
+
+        <div class="container py-5">
+            <div class="row g-4">
+
+
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="fw-bold" style="color: rgb(70, 81, 155);">
+                        Evently
+                    </h3>
+
+                    <p class="text-secondary mt-3">
+                        Discover exciting events, connect with people,
+                        and make every moment memorable with Evently.
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa-solid fa-location-dot me-2" style="color: rgb(70, 81, 155);"></i>
+                        Pune, Maharashtra, India
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="fa-solid fa-envelope me-2" style="color: rgb(70, 81, 155);"></i>
+                        support@evently.com
+                    </p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3" style="color: rgb(70, 81, 155);">
+                        Useful Links
+                    </h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#home" class="text-decoration-none text-secondary">
+                                <i class="fa-solid fa-angle-right me-2"></i>Home
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#category" class="text-decoration-none text-secondary">
+                                <i class="fa-solid fa-angle-right me-2"></i>Categories
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#events" class="text-decoration-none text-secondary">
+                                <i class="fa-solid fa-angle-right me-2"></i>Explore Events
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#aboutus" class="text-decoration-none text-secondary">
+                                <i class="fa-solid fa-angle-right me-2"></i>About Us
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#contact" class="text-decoration-none text-secondary">
+                                <i class="fa-solid fa-angle-right me-2"></i>Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3" style="color: rgb(70, 81, 155);">
+                        Our Services
+                    </h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#events" class="text-decoration-none text-secondary">
+                                <i class="fa-solid fa-angle-right me-2"></i>Event Discovery
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#events" class="text-decoration-none text-secondary">
+                                <i class="fa-solid fa-angle-right me-2"></i>Event Booking
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#category" class="text-decoration-none text-secondary">
+                                <i class="fa-solid fa-angle-right me-2"></i>Browse Categories
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#contact" class="text-decoration-none text-secondary">
+                                <i class="fa-solid fa-angle-right me-2"></i>Customer Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3" style="color: rgb(70, 81, 155);">
+                        Follow Us
+                    </h5>
+
+                    <p class="text-secondary">
+                        Follow Evently for the latest events and updates.
+                    </p>
+
+                    <div class="d-flex gap-2">
+                        <a href="#" aria-label="Instagram" class="btn btn-outline-secondary rounded-circle">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook" class="btn btn-outline-secondary rounded-circle">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn" class="btn btn-outline-secondary rounded-circle">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube" class="btn btn-outline-secondary rounded-circle">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Copyright -->
+            <div class="text-center">
+                <p class="mb-1 text-secondary">
+                    &copy; 2026 <strong style="color: rgb(70, 81, 155);">Evently</strong>.
+                    All Rights Reserved.
+                </p>
+
+                <small class="text-secondary">
+                    Designed for memorable experiences.
+                </small>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
